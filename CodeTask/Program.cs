@@ -11,6 +11,11 @@ namespace CodeTask
 
             Console.WriteLine(rearrangedWordsSentence);
 
+            foreach (var f in StringUtils.FizzBuzz(15))
+            {
+                Console.WriteLine(f);
+            }
+
             Console.ReadKey();
         }
     }

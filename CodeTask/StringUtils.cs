@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using CodeTask.Lib;
 
 namespace CodeTask
@@ -18,6 +20,11 @@ namespace CodeTask
             reorderer ??= DefaultReorderer;
 
             return reorderer.GetReordered(sentence);
+        }
+
+        public static IEnumerable<string> FizzBuzz(int count)
+        {
+            return new FizzBuzzGenerator().GenerateFizzBuzz(15);
         }
     }
 }
